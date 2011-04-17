@@ -1,4 +1,4 @@
-;(add-to-list 'load-path "~/" "~/.emacs/initializers")
+(add-to-list 'load-path "~/.emacs.d/plugins")
 
 (defun files-in-below-directory (directory)
   "List the .el files in DIRECTORY and in its sub-directories."
@@ -6,7 +6,7 @@
   ;; it will be easier to test if we make it interactive.
   ;; The directory will have a name such as
   ;;  "/usr/local/share/emacs/22.1.1/lisp/"
-  (interactive "DDirectory name: ")
+  (interactive "Directory name: ")
   (let (el-files-list
         (current-directory-list
          (directory-files-and-attributes directory t)))
