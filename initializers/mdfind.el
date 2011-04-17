@@ -1,0 +1,1 @@
+(setq locate-command "mdfind")
