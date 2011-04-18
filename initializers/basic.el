@@ -84,3 +84,5 @@
 ;;让 dired 可以递归的拷贝和删除目录。
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
+
+(defalias 'yes-or-no-p 'y-or-n-p)

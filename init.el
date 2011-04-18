@@ -120,9 +120,4 @@
 ; 
 ; ;;(load "gmail-mo")
 ; 
-; ;;和browser里session的概念很像
-; (load "session-mo")
-; ;;和session-mo配合起来使用，使你的伊好像从来没有关闭过一样
-; ;;注意：desktop最好放到.emacs文件的末端
-; (load "desktop-mo")
-; 
+
