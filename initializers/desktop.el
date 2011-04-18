@@ -1,3 +1,3 @@
 (load "desktop") 
-(desktop-load-default) 
-(desktop-read)
+;;important: emacs23 setting
+(desktop-save-mode 1)
