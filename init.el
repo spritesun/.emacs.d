@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
+(add-to-list 'Info-default-directory-list "~/.emacs.d/info")
 
 (defun files-in-below-directory (directory)
   "List the .el files in DIRECTORY and in its sub-directories."
