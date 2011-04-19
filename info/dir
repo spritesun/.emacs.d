@@ -13,3 +13,6 @@ File: dir,	Node: Top	This is the top of the INFO tree
   to select it.
 
 * Menu:
+
+emacs
+* Muse: (muse).                 Authoring and publishing environment for Emacs.
