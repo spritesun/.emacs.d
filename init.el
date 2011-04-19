@@ -39,19 +39,9 @@
     ;; return the filenames
     el-files-list))
 
-(mapc 'load (files-in-below-directory "~/.emacs.d/initializers"))
+(if (equal nil window-system) 
+    (mapc 'load (files-in-below-directory "~/.emacs.d/initializers/minimal"))
+  (mapc 'load (files-in-below-directory "~/.emacs.d/initializers"))
+)
 
 ;;end of manually defined
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
