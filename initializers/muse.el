@@ -10,6 +10,21 @@
 (require 'muse-project)
 
 (setq muse-project-alist
-      '(("Meditations" ("~/Documents/muse/pages" :default "index")
-         (:base "html" :path "~/Documents/muse/public_html")
-         (:base "pdf" :path "~/Documents/muse/pdf"))))
+      `(("Meditations" (,@(muse-project-alist-dirs "~/Documents/muse/pages")
+                        :default "index")
+         ,@(muse-project-alist-styles "~/Documents/muse/pages"
+                                      "~/Documents/muse/public_html"
+                                      "html"))))
+
+(add-hook 'muse-mode-hook
+ (lambda ()
+ (local-set-key (kbd "C-c C-c") 'muse-follow-name-at-point)
+ )
+)
+
+(setq muse-file-extension nil
+           muse-mode-auto-p t)
+(add-hook 'find-file-hooks 'muse-mode-maybe)
+
+(setq muse-html-header "~/Documents/muse/templates/header.html")
+(setq muse-html-footer "~/Documents/muse/templates/footer.html")
