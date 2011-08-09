@@ -5,3 +5,4 @@
 (slime-setup '(slime-fancy))  ; load almost all slime
 ;; (require 'slime-autoloads) ; I guess it auoload slime mode to lisp file
 
+(global-set-key (kbd "<f5>") 'slime-eval-buffer)
