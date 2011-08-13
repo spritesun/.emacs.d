@@ -1,0 +1,1 @@
+(setenv "PATH" "/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/lib/postgresql91/bin:$PATH")
