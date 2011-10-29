@@ -17,13 +17,13 @@
                                       "html"))))
 
 (add-hook 'muse-mode-hook
- (lambda ()
- (local-set-key (kbd "C-c C-c") 'muse-follow-name-at-point)
- )
-)
+          (lambda ()
+            (local-set-key (kbd "C-c C-c") 'muse-follow-name-at-point)
+            )
+          )
 
 (setq muse-file-extension nil
-           muse-mode-auto-p t)
+      muse-mode-auto-p t)
 (add-hook 'find-file-hooks 'muse-mode-maybe)
 
 (setq muse-html-header "~/Documents/muse/templates/header.html")
